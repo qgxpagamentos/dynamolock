@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"cirello.io/dynamolock"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
+	"github.com/qgxpagamentos/dynamolock"
 )
 
 func TestSessionMonitor(t *testing.T) {

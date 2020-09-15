@@ -19,7 +19,7 @@ package dynamolock_test
 import (
 	"testing"
 
-	"cirello.io/dynamolock"
+	"github.com/qgxpagamentos/dynamolock"
 )
 
 func TestNilLock(t *testing.T) {

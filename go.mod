@@ -1,4 +1,4 @@
-module cirello.io/dynamolock
+module github.com/qgxpagamentos/dynamolock
 
 go 1.12
 

@@ -1,6 +1,6 @@
 # DynamoDB Lock Client for Go
 
-[![GoDoc](https://godoc.org/cirello.io/dynamolock?status.svg)](https://godoc.org/cirello.io/dynamolock)
+[![GoDoc](https://godoc.org/github.com/qgxpagamentos/dynamolock?status.svg)](https://godoc.org/github.com/qgxpagamentos/dynamolock)
 [![Build Status](https://travis-ci.org/cirello-io/dynamolock.svg?branch=master)](https://travis-ci.org/cirello-io/dynamolock)
 [![Coverage Status](https://coveralls.io/repos/github/cirello-io/dynamolock/badge.svg?branch=master)](https://coveralls.io/github/cirello-io/dynamolock?branch=master)
 [![Go Report Card](https://goreportcard.com/badge/github.com/cirello-io/dynamolock)](https://goreportcard.com/report/github.com/cirello-io/dynamolock)
@@ -34,11 +34,11 @@ To use the DynamoDB Lock Client for Go, you must make it sure it is present in
 `$GOPATH` or in your vendor directory.
 
 ```sh
-$ go get -u cirello.io/dynamolock
+$ go get -u github.com/qgxpagamentos/dynamolock
 ```
 
 This package has the `go.mod` file to be used with Go's module system. If you
-need to work on this package, use `go mod edit -replace=cirello.io/dynamolock@yourlocalcopy`.
+need to work on this package, use `go mod edit -replace=github.com/qgxpagamentos/dynamolock@yourlocalcopy`.
 
 Then, you need to set up a DynamoDB table that has a hash key on a key with the
 name `key`. For your convenience, there is a function in the package called
@@ -54,7 +54,7 @@ package main
 import (
 	"log"
 
-	"cirello.io/dynamolock"
+	"github.com/qgxpagamentos/dynamolock"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"

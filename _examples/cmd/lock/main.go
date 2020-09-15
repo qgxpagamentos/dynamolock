@@ -8,11 +8,11 @@ import (
 	"os/signal"
 	"time"
 
-	"cirello.io/dynamolock"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
+	"github.com/qgxpagamentos/dynamolock"
 	"github.com/urfave/cli"
 	"golang.org/x/xerrors"
 )
