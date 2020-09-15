@@ -742,9 +742,9 @@ func (c *Client) createTable(ctx context.Context, opt *createDynamoDBTableOption
 		createTableInput.ProvisionedThroughput = opt.provisionedThroughput
 	}
 
-	if opt.tags != nil {
-		createTableInput.Tags = opt.tags
-	}
+	// if opt.tags != nil {
+	// 	createTableInput.Tags = opt.tags
+	// }
 
 	return c.dynamoDB.CreateTableWithContext(ctx, createTableInput)
 }
